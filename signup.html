@@ -200,7 +200,7 @@
     <script>
         const labels = document.getElementsByTagName('label');
         var target = null;
-        for(let i = 0; i < labels.length(); i++){
+        for(let i = 0; i < labels.length; i++){
             if(labels[i].htmlFor === 'extension_TermsOfUseConsented'){
                 target = labels[i]
                 labels[i].innerHtml = '<div>hello <a href="https://www.brighter.ai" target="_blank">here</a>.'
