@@ -199,7 +199,7 @@
     </div>
     <script>
         const labels = document.getElementsByTagName('label');
-        for(let i = 0; i < labels.length; i++){
+        for(var i = 0; i < labels.length; i++){
             if(labels[i].htmlFor === 'extension_TermsOfUseConsented'){
                 labels[i].innerHTML = "By checking this box, you agree to the <a href=\"https://brighter.ai\" target=\"_blank\">Privacy Policy</a>, <a href=\"https://brighter.ai\" target=\"_blank\">Terms of Service</a>, <a href=\"https://brighter.ai\" target=\"_blank\">User Pledge</a>. You'll be automatically subscribed to the weekly Benchmark Blog. You can unsubscribe at any time."
             }
