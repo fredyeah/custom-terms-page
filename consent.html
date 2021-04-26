@@ -140,14 +140,6 @@
             width: 100% !important;
         }
 
-        .termsofuse {
-            width: 100%;
-            border: 1px solid #23285A;
-            border-radius: .5rem;
-            height: 400px;
-            overflow-y: scroll;
-        }
-
         .attrEntry label:nth-of-type(2) {
             text-align: center !important;
         }
@@ -169,12 +161,6 @@
             <div class="col-lg-6">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <p class="termsofuse">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
                         <div id="api">
                         </div>
                     </div>
@@ -182,4 +168,12 @@
             </div>
         </div>
     </div>
+    <script>
+        const labels = document.getElementsByTagName('label');
+        for(var i = 0; i < labels.length; i++){
+            if(labels[i].htmlFor === 'extension_TermsOfUseConsented'){
+                labels[i].innerHTML = "By checking this box, you agree to the <a href=\"https://brighter.ai/brighterai_dpa/\" target=\"_blank\">Privacy Policy</a> and <a href=\"https://brighter.ai/brighterai_terms-and-conditions\" target=\"_blank\">Terms of Service</a>. You'll be automatically subscribed to the weekly Benchmark Blog. You can unsubscribe at any time."
+            }
+        }
+    </script>
 </body></html>
