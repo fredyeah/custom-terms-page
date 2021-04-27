@@ -151,6 +151,8 @@
         input[name=extension_TermsOfUseConsented]:active, input[name=extension_TermsOfUseConsented]:focus, input[name=extension_TermsOfUseConsented] {
             border: none !important;
             outline: none !important;
+            width: 24px !important;
+            display: block !important;
         }
     </style>
 
@@ -172,7 +174,7 @@
         const labels = document.getElementsByTagName('label');
         for(var i = 0; i < labels.length; i++){
             if(labels[i].htmlFor === 'extension_TermsOfUseConsented'){
-                labels[i].innerHTML = "By checking this box, you agree to the <a href=\"https://brighter.ai/brighterai_dpa/\" target=\"_blank\">Privacy Policy</a> and <a href=\"https://brighter.ai/brighterai_terms-and-conditions\" target=\"_blank\">Terms of Service</a>. You'll be automatically subscribed to the weekly Benchmark Blog. You can unsubscribe at any time."
+                labels[i].innerHTML = "I have read and agreed to the <a href=\"https://brighter.ai/brighterai_terms-and-conditions\" target=\"_blank\">Terms & Conditions</a> and the <a href=\"https://brighter.ai/brighterai_dpa/\" target=\"_blank\">Data Processing Agreement</a>."
             }
         }
     </script>
